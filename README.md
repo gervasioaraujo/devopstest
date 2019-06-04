@@ -18,7 +18,7 @@ Este projeto foi testado somente na plataforma Android.
 
 Considerando que na máquina já estejam configurados e funcionando adequadamente o git e o react native, execute os seguintes passos:
 
-1. Abra o terminal na sua máquina, escolha o diretório apropriado, e digite o comando `git clone ...` para baixar o projeto;
+1. Abra o terminal na sua máquina, escolha o diretório apropriado, e digite o comando `git clone https://github.com/gervasioaraujo/devopstest.git` para baixar o projeto;
 
 2. Digite `cd devopstest` para acessar o diretório do projeto;
 
@@ -26,4 +26,4 @@ Considerando que na máquina já estejam configurados e funcionando adequadament
 
 4. Ainda dentro do diretório do projeto, rode o comando `react-native link` para que configurações de algumas das libs instaladas sejam feitas em código nativo Android e IOS;
 
-5. Por fim, conecte um dispositivo Android na sua máquina pelo usb e execute o comando `react-native run-android`.
+5. Por fim, conecte um dispositivo Android na sua máquina pela porta usb e execute o comando `react-native run-android`.
