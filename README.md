@@ -27,3 +27,5 @@ Considerando que na máquina já estejam configurados e funcionando adequadament
 4. Ainda dentro do diretório do projeto, rode o comando `react-native link` para que configurações de algumas das libs instaladas sejam feitas em código nativo Android e IOS;
 
 5. Por fim, conecte um dispositivo Android na sua máquina pela porta usb e execute o comando `react-native run-android`.
+
+Obs.: Os filtros no app são ativados pelo toque.
