@@ -52,5 +52,6 @@ const styles = StyleSheet.create({
     exercicesContainer: {
         flex: 2,
         marginTop: 10,
+        marginBottom: 15
     }
 });

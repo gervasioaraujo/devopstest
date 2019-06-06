@@ -42,14 +42,14 @@ export default class ExerciceCard extends Component {
                                 {item.calories} Kcal
                             </Text>
                         </View>
-                        <View style={{ borderLeftWidth: .5, borderLeftColor: colors.gray }} />
+                        <View style={styles.verticalSeparator} />
                         <View style={styles.rowView}>
                             <Image source={require("../assets/images/ic_time.png")} />
                             <Text style={styles.exerciceNumbers}>
-                                {(item.time % 60) === 0 ? `${item.time / 60}h` : `${item.time} min`}
+                                {(item.time % 60) === 0 ? `${item.time / 60}h` : `${item.time} m`}
                             </Text>
                         </View>
-                        <View style={{ borderLeftWidth: .5, borderLeftColor: colors.gray }} />
+                        <View style={styles.verticalSeparator} />
                         <View style={styles.rowView}>
                             <Image source={require("../assets/images/ic_balance.png")} />
                             <Text style={styles.exerciceNumbers}>
@@ -97,8 +97,7 @@ const styles = StyleSheet.create({
     },
     cardRightSide: {
         flex: 2,
-        marginLeft: 25,
-        marginRight: 5
+        marginLeft: 25
     },
     exerciceName: {
         fontFamily: 'Montserrat Regular',
@@ -108,7 +107,7 @@ const styles = StyleSheet.create({
     exerciceNumbersContainer: {
         flexDirection: 'row',
         marginTop: 10,
-        justifyContent: 'space-between'
+        // justifyContent: 'space-between'
     },
     rowView: {
         flexDirection: 'row'
@@ -134,5 +133,10 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 5,
         borderRadius: 15,
+    },
+    verticalSeparator: {
+        borderLeftWidth: .5,
+        borderLeftColor: colors.gray,
+        marginHorizontal: 5
     }
 });
